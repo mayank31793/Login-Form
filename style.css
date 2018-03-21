@@ -1,0 +1,178 @@
+/*table{
+	width: 100%;
+}
+
+#country{
+
+}
+
+#country:hover{
+	cursor: pointer;
+}
+
+.pageNumber{
+	margin: 20px 0px -25px 0px;
+}
+
+.formDiv{
+	border: 5px solid #D0D4D6;
+	padding: 4px;
+}
+
+.formImage{
+	background-color: #E37016;
+}*/
+
+#copyright{
+	font-size: 24px;
+}
+
+#page1 p,#page2 p,#page3 p{
+	margin-top: 10px;
+}
+
+table{
+	width: 100%;
+}
+
+td{
+	font-size: 24px;
+	padding-bottom: 5px;
+	opacity: 0.8;
+}
+
+.myForm{
+	border: 5px solid #86858A;
+}
+
+.formImg{
+	background-color: orange;
+	color: white;
+}
+
+.formDetails{
+	padding: 0px;
+}
+
+input[type=text],[type=number]{
+	width: 98%;
+	margin: 0px 2px 2px 1px;
+	border-style: none;
+	border-bottom: 2px solid #94929C;
+}
+
+.dropdown{
+	border-bottom: 2px solid #94929C;
+}
+
+.dropdown .caret{
+	float: right;
+	margin-top: 10px;
+	margin-right: 5px;
+	font-size: 20px;
+}
+
+.dropdown-menu>li{
+	padding: 5px;
+	cursor: pointer;
+}
+
+#selectCountry:hover{
+	cursor: pointer;
+}
+
+#formBegin2{
+	display: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input:focus{
+	border-bottom: 2px solid #424144;
+	outline: none;
+}
+
+textarea{
+	width: 100%;
+	font-size: 24px;
+	border-style: none;
+	border-bottom: 2px solid #94929C;	
+}
+
+textarea:focus{
+	border-bottom: 2px solid #424144;
+	outline: none;	
+}
+
+.myButton{
+	position: relative;
+	bottom: 10px;
+	float: right;
+}
+
+#errfname,#errlname,#erremail,#errphone,#errage,#erraddress,#errcity,#errzipcode{
+	/*visibility: hidden;*/
+	opacity: 0;
+	position: relative;
+	bottom: 35px;
+	left: -5px;
+	float: right;
+}
+
+.genderRadio{
+	width: 25px;
+	height: 25px;
+	margin-bottom: 5px;
+}
+
+@media (min-width: 1200px) { 
+
+  .formContainer{
+      margin-top:20vh;
+  }
+}
+
+@media (min-width: 992px) { 
+
+  .formContainer{
+      margin-top:20vh;
+  }
+}
+
+@media (max-width: 768px) { 
+   	.formContainer{
+   		height: 100vh;
+   	}
+
+   	.myForm{
+   		height: 100vh;
+   	}
+
+	.myButton{
+		position: fixed;
+		bottom: 10px;
+		right: 10px;
+	}
+
+}
+
+@media (max-width: 992px) { 
+   	.formContainer{
+   		height: 100vh;
+   	}
+
+   	.myForm{
+   		height: 100vh;
+   	}
+
+	.myButton{
+		position: fixed;
+		bottom: 10px;
+		right: 10px;
+	}
+
+}

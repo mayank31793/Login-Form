@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<!--Bootstrap class-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+
+</head>
+<body>
+
+<div class="container-fluid formContainer">
+	<div class="row">
+		<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+			
+		</div>
+		<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 myForm" id="formBegin">
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 formImg" id="myFormId">
+					<center>
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Newspaper_template.svg/2000px-Newspaper_template.svg.png" class="img-responsive hidden-sm hidden-xs">
+					</center>
+					<center>vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. </center>
+					<p id="copyright">&copy;</p>
+				</div>
+				<div class="col-lg-8 col-md-8 col-sm12 col-xs-12 formDetails" id="formDetailsId">
+					<!-- <form name="myformDetails"> -->
+						<div id="page1">
+							<p>1/3</p>
+							<h2>Please fill with your details</h2>
+							<form name="formDetails">
+								<table>
+									<tr>
+										<td>
+											<input type="text" name="fname" placeholder="First Name">
+											<span class="label label-danger" id="errfname">Invalid first name</span>
+										</td>
+										<td>
+											<input type="text" name="lname" placeholder="Last Name">
+											<span class="label label-danger" id="errlname">Invalid last name</span>
+										</td>								
+									</tr>
+									<tr>
+										<td>
+											<input type="text" name="email" placeholder="Email">
+											<span class="label label-danger " id="erremail">Invalid email</span>
+										</td>
+										<td>
+											<input type="number" name="phonenumber" placeholder="Telephone">
+											<span class="label label-danger " id="errphone">Invalid Phone</span>
+										</td>								
+									</tr>
+									<tr>
+										<td>
+											<input type="number" name="age" placeholder="Age">
+											<span class="label label-danger" id="errage">Invalid Age</span>
+										</td>
+										<td>
+											<label><input type="radio" class="genderRadio" name="gender" checked>Male</label>
+											<label><input type="radio" class="genderRadio" name="gender">Female</label>	
+										</td>								
+									</tr>
+								</table>
+							</form><br><br><br>
+							<div class="myButton">
+								<button class="btn btn-info" onclick="page2()">Forward&nbsp;<span class="glyphicon glyphicon-chevron-right"></span></button>
+							</div>
+						</div>	
+
+						<div id="page2">
+							<p>2/3</p>
+							<h2>Please fill with additional Info</h2>
+							<form name="formDetails2">
+								<table>
+									<tr>
+										<td colspan="2">
+											<input type="text" name="address" placeholder="Address">
+											<span class="label label-danger" id="erraddress">Invalid Address</span>
+										</td>								
+									</tr>
+									<tr>
+										<td>
+											<input type="text" name="city" placeholder="City">
+											<span class="label label-danger " id="errcity">Invalid City</span>
+										</td>
+										<td>
+											<input type="number" name="zipcode" placeholder="Zip Code">
+											<span class="label label-danger " id="errzipcode">Invalid Zip Code</span>
+										</td>								
+									</tr>
+									<tr>
+										<td>
+											<div class="dropdown">
+											  <div class="dropdown-toggle" type="button" data-toggle="dropdown" id="selectCountry">Select Country
+											  <span class="caret"></span></div>
+											  <ul class="dropdown-menu">
+											    <li onclick="funthis(this)">India</li>
+											    <li onclick="funthis(this)">Pakistan</li>
+											    <li onclick="funthis(this)">Nepal</li>
+											    <li onclick="funthis(this)">Bangladesh</li>
+											  </ul>
+											</div>
+										</td>
+										<td>
+											
+										</td>								
+									</tr>
+								</table>
+							</form><br><br><br>
+							<div class="myButton">
+								<button class="btn" onclick="page1()"><span class="glyphicon glyphicon-chevron-left"></span>&nbsp;Backward</button>
+								<button class="btn btn-info" onclick="page3()">Forward&nbsp;<span class="glyphicon glyphicon-chevron-right"></span></button>
+							</div>
+						</div>
+
+						<div id="page3">
+							<p>3/3</p>
+							<h2>Send an optional message</h2>
+							<textarea placeholder="Hello... write your message here!"></textarea>
+							<input type="checkbox" id="termsCheckbox">Please accept <a href="#">terms and conditions </a>?
+							<br><br><br><br>
+							<div class="myButton">
+								<button class="btn" onclick="page2()"><span class="glyphicon glyphicon-chevron-left"></span>&nbsp;Backward</button>
+								<button class="btn btn-info" onclick="submitForm()">submit&nbsp;<span class="glyphicon glyphicon-ok"></span></button>
+							</div>	
+						</div>
+
+					<!-- </form> -->					
+				</div>
+			</div>
+		</div>	
+		<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 myForm"  id="formBegin2">
+			Successfully Logged In....
+			<center>
+				<img src="http://www.freepngimg.com/download/ok/6-2-ok-png-hd.png">
+			</center>
+		</div>			
+		<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+			
+		</div>		
+	</div>
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
